@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ruuf", "ruuf\ruuf.csproj", "{8ECFE9F1-FF34-47C4-AFBA-2CC0E7542659}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ruufTest", "ruufTest\ruufTest.csproj", "{D2B6727B-22B6-4A06-AC0C-75EA32906DEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ECFE9F1-FF34-47C4-AFBA-2CC0E7542659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECFE9F1-FF34-47C4-AFBA-2CC0E7542659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ECFE9F1-FF34-47C4-AFBA-2CC0E7542659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ECFE9F1-FF34-47C4-AFBA-2CC0E7542659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B6727B-22B6-4A06-AC0C-75EA32906DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B6727B-22B6-4A06-AC0C-75EA32906DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B6727B-22B6-4A06-AC0C-75EA32906DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B6727B-22B6-4A06-AC0C-75EA32906DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
