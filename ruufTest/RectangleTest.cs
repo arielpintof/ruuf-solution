@@ -7,6 +7,31 @@ namespace ruufTest;
 
 public class RectangleTest
 {
+    
+    [Theory]
+    [InlineData(-3)]
+    [InlineData(-120)]
+    [InlineData(-9999)]
+    [InlineData(0)]
+    public void NegativeOrZero_Width_Should_Throw_ArgumentOutOfRangeException(int width)
+    {
+        void Action() => Rectangle.Create(width, -3);
+        
+        Assert.Throws<ArgumentOutOfRangeException>(Action);
+    }
+
+    [Theory]
+    [InlineData(-3)]
+    [InlineData(-120)]
+    [InlineData(-9999)]
+    [InlineData(0)]
+    public void NegativeOrZero_Height_Should_Throw_ArgumentOutOfRangeException(int height)
+    {
+        void Action() => Rectangle.Create(3, height);
+        
+        Assert.Throws<ArgumentOutOfRangeException>(Action);
+    }
+    
     [Fact]
     public void IsRectangleByDistance()
     {

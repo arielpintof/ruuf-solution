@@ -18,8 +18,11 @@ public class Rectangle : IArea, IRectangle
 
     public static IArea Create(int width, int height)
     {
-        if(width <= 0 || height <= 0) 
-            throw new ArgumentException("The side size can't be zero or negative");
+        if (width <= 0)
+            throw new ArgumentOutOfRangeException(nameof(width), "Width must be positive and non-zero.");
+    
+        if (height <= 0)
+            throw new ArgumentOutOfRangeException(nameof(height), "Height must be positive and non-zero.");
 
         return new Rectangle(width, height);
     }
@@ -31,7 +34,7 @@ public class Rectangle : IArea, IRectangle
 
         if (points.Any(e => e.X <= 0 || e.Y <= 0))
         {
-            throw new Exception("Points values cant be zero or negative");
+            throw new ArgumentOutOfRangeException(nameof(points),"Points values cant be zero or negative");
         }
         
         var equalDistanceMethod = RectangleMethods.EqualDistances(points);
